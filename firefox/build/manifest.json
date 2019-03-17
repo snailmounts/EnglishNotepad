@@ -1,0 +1,18 @@
+{
+  "name": "Notebook",
+  "version": "0.1.0",
+  "description": "Example chrome sidebar extension to embed an iframe.",
+
+  "browser_action": {
+    "default_popup": "index.html"
+},
+
+  "manifest_version": 2,
+  "permissions": [
+    "https://*/*",
+    "http://*/*",
+    "tabs",
+    "webRequest",
+    "webRequestBlocking"
+  ]
+}

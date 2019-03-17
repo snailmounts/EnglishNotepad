@@ -1,0 +1,38 @@
+{
+  "description": "notepad",
+  "manifest_version": 2,
+  "name": "notepad",
+  "version": "1.0",
+
+  "icons": {
+    "48": "icons/beasts-48.png"
+  },
+
+  "permissions": [
+    "activeTab",
+    "contextMenus",
+    "https://*/*",
+    "http://*/*",
+    "tabs",
+    "webRequest",
+    "webRequestBlocking"
+  ],
+
+
+  "sidebar_action": {
+    "default_icon": "",
+    "default_title" : "",
+    "default_panel": "build/index.html"
+  },
+
+  "browser_action": {
+    "default_icon": "icons/beasts-32.png",
+    "theme_icons": [{
+        "light": "icons/beasts-32-light.png",
+        "dark": "icons/beasts-32.png",
+        "size": 32
+    }],
+    "default_title": "自动下单",
+    "default_popup": "popup/startnotepad.html"
+  }
+}
